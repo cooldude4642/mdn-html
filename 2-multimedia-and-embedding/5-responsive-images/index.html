@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <img
+        src="image-960w.png"
+        srcset="image-320w.png 320w, image-640w.png 640w, image-960w.png 960w"
+        sizes="
+				(max-width: 800px) 320px,
+				(max-width: 1280px) 640px,
+				960px
+			"
+        alt="meme"
+      />
+    </p>
+    <p>
+      <img
+        src="image-960w.png"
+        srcset="image-320w.png 320w, image-640w.png 640w, image-960w.png 960w"
+        style="width: 320px"
+        alt="meme"
+      />
+    </p>
+    <p>
+      <picture>
+        <source media="(max-width: 1279px)" srcset="image-640w.png" />
+        <source media="(min-width: 1280px)" srcset="image-960w.png" />
+        <img src="image-960w.png" alt="" />
+      </picture>
+    </p>
+  </body>
+</html>
